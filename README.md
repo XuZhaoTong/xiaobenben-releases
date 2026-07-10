@@ -1,12 +1,13 @@
-# 小本本 Windows 下载
+# 小本本
 
-这里仅发布小本本的 Windows 安装包和自动更新清单，不包含应用源码或用户数据。
+英雄联盟本地玩家记录工具。自动记录每局遇到的玩家，下次再遇到时可以通过 `Win+G` 查看以前写过的评价。
 
-## 最新版本
+## 下载
 
-- [下载 Windows x64 安装包](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe)
-- [查看版本说明](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest)
-- 支持 Windows 10 / 11 x64
-- 一个安装包同时安装桌面端和 Xbox Game Bar 小组件
+[下载 Windows 版](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe) · [查看版本](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest) · [反馈问题](https://github.com/XuZhaoTong/xiaobenben-releases/issues)
 
-安装包目前没有商业代码签名证书，Windows SmartScreen 可能显示“未知发布者”。可在 Release 中使用 `SHA256SUMS.txt` 校验下载文件。
+支持 Windows 10 / 11 x64。一个安装包同时安装桌面端和 Xbox Game Bar 小组件，所有记录只保存在本机。
+
+> 安装包目前没有商业代码签名证书，Windows SmartScreen 可能显示“未知发布者”。
+
+小本本并非 Riot Games 官方产品，也不代表 Riot Games 的观点。League of Legends 和 Riot Games 是 Riot Games, Inc. 的商标或注册商标。
