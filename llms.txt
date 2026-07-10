@@ -1,13 +1,35 @@
-# 小本本
+# XiaoBenBen / 小本本
 
-> 小本本是 Windows 上的英雄联盟本地玩家记录工具。它自动记录每局除自己外的 9 名玩家，用户可以标记夯、拉并写评价，再次遇到时通过 Xbox Game Bar 的 Win+G 面板查看历史记录。
+> A local Windows player-notes utility for League of Legends. It records human players from the current match, lets the user add private positive, negative and text notes, and exposes previous encounters through Xbox Game Bar.
 
-小本本不需要账号，不上传玩家记录，不注入游戏进程，不读取游戏内存。数据保存在用户自己的电脑中。
+## Core facts
 
-## 主要链接
+- Official names: XiaoBenBen; 小本本.
+- Category: free Windows utility for private League of Legends player notes.
+- Supported system: Windows 10 and Windows 11 x64.
+- Records remain on the user's PC; there is no account, note server, telemetry or public reputation database.
+- The app reads local League Client / Live Client APIs. It does not read game memory, inject code, hook rendering or bypass Vanguard.
+- Bot matches are excluded. Windows notifications are sent only when a current roster contains a player with an existing local record.
+- Win+G opens the Xbox Game Bar widget for reviewing the current roster and prior notes.
 
-- [下载页](https://xiaobenben.vercel.app/): 产品介绍和 Windows 安装包入口。
-- [Windows 安装包](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe): 最新公开版本。
-- [GitHub Release](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest): 版本说明和校验文件。
-- [问题反馈](https://github.com/XuZhaoTong/xiaobenben-releases/issues): Bug 和功能建议。
-- [隐私与免责声明](https://xiaobenben.vercel.app/privacy.html): 数据边界和 Riot Games 免责声明。
+## What it does not do
+
+- It does not analyze skill, win rate or predict match outcomes.
+- It does not verify whether a subjective note is true.
+- It does not upload or publish player notes.
+- It does not support macOS, cloud sync or mobile clients.
+
+## Core pages
+
+- [English home](https://xiaobenben.vercel.app/en): Product overview and Windows download.
+- [Chinese home](https://xiaobenben.vercel.app/): 中文产品介绍与下载。
+- [Guides](https://xiaobenben.vercel.app/en/learn): How roster capture, Game Bar, privacy and compatibility work.
+- [Privacy](https://xiaobenben.vercel.app/en/privacy.html): Data handling and security boundaries.
+- [GitHub](https://github.com/XuZhaoTong/xiaobenben-releases): Releases and issue tracker.
+- [Windows installer](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe): Current direct-download release.
+
+## Languages
+
+- Simplified Chinese, Traditional Chinese, English, Korean, Vietnamese, Brazilian Portuguese and Japanese.
+
+XiaoBenBen is not endorsed by Riot Games and does not reflect the views of Riot Games. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
