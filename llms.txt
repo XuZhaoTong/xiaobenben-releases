@@ -1,0 +1,13 @@
+# 小本本
+
+> 小本本是 Windows 上的英雄联盟本地玩家记录工具。它自动记录每局除自己外的 9 名玩家，用户可以标记夯、拉并写评价，再次遇到时通过 Xbox Game Bar 的 Win+G 面板查看历史记录。
+
+小本本不需要账号，不上传玩家记录，不注入游戏进程，不读取游戏内存。数据保存在用户自己的电脑中。
+
+## 主要链接
+
+- [下载页](https://xiaobenben.vercel.app/): 产品介绍和 Windows 安装包入口。
+- [Windows 安装包](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe): 最新公开版本。
+- [GitHub Release](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest): 版本说明和校验文件。
+- [问题反馈](https://github.com/XuZhaoTong/xiaobenben-releases/issues): Bug 和功能建议。
+- [隐私与免责声明](https://xiaobenben.vercel.app/privacy.html): 数据边界和 Riot Games 免责声明。

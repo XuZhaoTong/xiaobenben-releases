@@ -3,7 +3,60 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="小本本是英雄联盟本地玩家记录工具，自动保存每局遇到的 9 名玩家，支持夯、拉、文字评价，并可通过 Win+G 查看历史记录。" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#060910" />
+    <meta name="application-name" content="小本本" />
     <title>小本本 - 英雄联盟本地玩家记录</title>
+    <link rel="canonical" href="https://xiaobenben.vercel.app/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://xiaobenben.vercel.app/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" href="/assets/player-records-v1.webp" as="image" type="image/webp" fetchpriority="high" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="小本本" />
+    <meta property="og:title" content="小本本 - 记住你遇到过的玩家" />
+    <meta property="og:description" content="自动记录每局 9 名玩家，按 Win+G 查看以前写过的评价。所有记录只保存在本机。" />
+    <meta property="og:url" content="https://xiaobenben.vercel.app/" />
+    <meta property="og:image" content="https://xiaobenben.vercel.app/assets/og-player-records-v1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="小本本玩家记录页面" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="小本本 - 记住你遇到过的玩家" />
+    <meta name="twitter:description" content="英雄联盟本地玩家记录工具，支持 Win+G 查看历史评价。" />
+    <meta name="twitter:image" content="https://xiaobenben.vercel.app/assets/og-player-records-v1.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "小本本",
+        "alternateName": "XiaoBenBen",
+        "description": "英雄联盟本地玩家记录工具，自动保存每局遇到的玩家，并通过 Xbox Game Bar 查看历史评价。",
+        "url": "https://xiaobenben.vercel.app/",
+        "downloadUrl": "https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe",
+        "softwareVersion": "0.4.0",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "isAccessibleForFree": true,
+        "image": "https://xiaobenben.vercel.app/assets/og-player-records-v1.jpg",
+        "screenshot": "https://xiaobenben.vercel.app/assets/player-records-v1.webp",
+        "featureList": [
+          "自动记录每局 9 名玩家",
+          "通过 Win+G 查看本局玩家和历史评价",
+          "支持夯、拉、文字评价和手动添加",
+          "所有记录只保存在本机"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: dark;
@@ -72,7 +125,7 @@
         background:
           linear-gradient(90deg, rgba(5, 8, 13, 0.96) 0%, rgba(5, 8, 13, 0.78) 33%, rgba(5, 8, 13, 0.18) 76%),
           linear-gradient(180deg, rgba(5, 8, 13, 0.08), rgba(5, 8, 13, 0.88)),
-          url("./assets/app-main.png") right center / min(76vw, 1120px) auto no-repeat;
+          url("./assets/player-records-v1.webp") right center / min(76vw, 1120px) auto no-repeat;
         border-bottom: 1px solid var(--line);
       }
 
@@ -230,43 +283,9 @@
         line-height: 1.7;
       }
 
-      .download-card {
-        position: relative;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background:
-          linear-gradient(135deg, rgba(224, 181, 91, 0.08), transparent 28%),
-          linear-gradient(180deg, rgba(24, 31, 41, 0.98), rgba(8, 12, 18, 0.97));
-        padding: 20px;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 18px;
-        align-items: center;
-        box-shadow:
-          inset 0 1px 0 rgba(255, 235, 165, 0.08),
-          inset 0 0 48px rgba(39, 216, 199, 0.04),
-          0 18px 58px rgba(0, 0, 0, 0.34);
-      }
-
-      .download-card strong {
-        display: block;
-        font-size: 24px;
-        margin-bottom: 8px;
-      }
-
-      .download-card p,
-      .feature p,
-      .note p,
-      .checksum {
+      .feature p {
         color: var(--muted);
         line-height: 1.7;
-      }
-
-      .checksum {
-        margin-top: 10px;
-        font-family: "Cascadia Mono", "Consolas", monospace;
-        word-break: break-all;
-        font-size: 13px;
       }
 
       .feature-grid {
@@ -275,8 +294,7 @@
         gap: 14px;
       }
 
-      .feature,
-      .note {
+      .feature {
         min-width: 0;
         position: relative;
         border: 1px solid rgba(224, 181, 91, 0.22);
@@ -290,9 +308,7 @@
           0 15px 36px rgba(0, 0, 0, 0.25);
       }
 
-      .feature::before,
-      .note::before,
-      .download-card::before {
+      .feature::before {
         content: "";
         position: absolute;
         width: 26px;
@@ -324,23 +340,21 @@
         font-weight: 700;
       }
 
-      .note-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-      }
-
-      code {
-        color: var(--teal);
-      }
-
       footer {
         width: min(1160px, calc(100vw - 36px));
         margin: 0 auto;
-        padding: 24px 0 40px;
+        padding: 18px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
         color: var(--muted);
-        font-size: 14px;
+        font-size: 13px;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      footer a:hover,
+      footer a:focus-visible {
+        color: var(--text);
       }
 
       @media (max-width: 900px) {
@@ -348,7 +362,7 @@
           min-height: 720px;
           background:
             linear-gradient(180deg, rgba(5, 8, 13, 0.95) 0%, rgba(5, 8, 13, 0.76) 48%, rgba(5, 8, 13, 0.22) 100%),
-            url("./assets/app-main.png") center bottom / 980px auto no-repeat;
+            url("./assets/player-records-v1.webp") center bottom / 980px auto no-repeat;
         }
 
         .hero-inner {
@@ -356,15 +370,9 @@
           padding-top: 28px;
         }
 
-        .download-card,
         .feature-grid,
-        .note-grid,
         .section-head {
           grid-template-columns: 1fr;
-        }
-
-        .download-card {
-          align-items: start;
         }
       }
     </style>
@@ -374,7 +382,7 @@
       <section class="hero">
         <div class="hero-inner">
           <div class="brand">
-            <img src="./assets/logo.png" alt="" />
+            <img src="./assets/logo-v1.webp" width="96" height="96" alt="小本本图标" decoding="async" fetchpriority="high" />
             <div>
               <strong>小本本</strong><br />
               <span>英雄联盟本地玩家记录</span>
@@ -423,20 +431,12 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="note-grid">
-          <article class="note">
-            <h2>数据只在本机</h2>
-            <p>不需要账号，不上传记录。数据保存在 <code>%APPDATA%\小本本\notes.json</code>。</p>
-          </article>
-          <article class="note">
-            <h2>不注入游戏</h2>
-            <p>只访问本机 League Client / Live Client 接口，不读取游戏内存。</p>
-          </article>
-        </div>
-      </section>
     </main>
-    <footer>小本本并非 Riot Games 官方产品，也不代表 Riot Games 的观点。League of Legends 和 Riot Games 是 Riot Games, Inc. 的商标或注册商标。</footer>
+    <footer>
+      <span>非 Riot Games 官方产品</span>
+      <a href="https://github.com/XuZhaoTong/xiaobenben-releases">GitHub</a>
+      <a href="/privacy.html">隐私与免责声明</a>
+    </footer>
   </body>
 </html>
 
