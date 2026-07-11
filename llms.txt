@@ -26,7 +26,7 @@
 - [Guides](https://xiaobenben.vercel.app/en/learn): How roster capture, Game Bar, privacy and compatibility work.
 - [Privacy](https://xiaobenben.vercel.app/en/privacy.html): Data handling and security boundaries.
 - [GitHub](https://github.com/XuZhaoTong/xiaobenben-releases): Releases and issue tracker.
-- [Windows installer](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.0_x64-setup.exe): Current direct-download release.
+- [Windows installer](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.1_x64-setup.exe): Current direct-download release.
 
 ## Languages
 
