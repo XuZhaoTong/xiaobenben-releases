@@ -4,7 +4,7 @@
 
 ## 下载
 
-[下载页](https://xiaobenben.vercel.app) · [下载 Windows 版](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.1_x64-setup.exe) · [反馈问题](https://github.com/XuZhaoTong/xiaobenben-releases/issues)
+[下载页](https://xiaobenben.vercel.app) · [下载 Windows 版](https://github.com/XuZhaoTong/xiaobenben-releases/releases/latest/download/xiaobenben_0.4.2_x64-setup.exe) · [反馈问题](https://github.com/XuZhaoTong/xiaobenben-releases/issues)
 
 支持 Windows 10 / 11 x64。一个安装包同时安装桌面端和 Xbox Game Bar 小组件，所有记录只保存在本机。
 
