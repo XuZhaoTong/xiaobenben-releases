@@ -108,6 +108,9 @@ code { color: #b9f7ef; overflow-wrap: anywhere; }
   font-weight: 750;
 }
 .button.secondary { background: #101721; border-color: rgba(224, 181, 91, 0.24); }
+.download-fallback { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+.download-fallback a { color: #d9e6f1; text-decoration: underline; text-underline-offset: 3px; }
+.download-fallback a:hover { color: var(--gold); }
 .meta-strip, .trust-strip { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
 .meta-strip span, .trust-strip span { padding: 7px 11px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(5, 9, 15, 0.72); font-size: 14px; color: var(--muted); }
 .trust-strip { margin-top: 10px; }
